@@ -17,7 +17,8 @@ public class studentAverage {
                 marks[i][j] = sc.nextInt();
             }
         }
-
+        double highestAverage = 0;
+        int topper = 0;
         // Calculating average
         for(int i = 0; i < students; i++) {
             int sum = 0;
@@ -26,7 +27,14 @@ public class studentAverage {
             }
             double average = sum / subjects;
             System.out.println("Student " + (i + 1) + " Average = " + average);
+            // Finding topper
+            if(average > highestAverage) {
+                highestAverage = average;
+                topper = i + 1;
+            }
         }
+        System.out.println("Topper is Student " + topper);
+        System.out.println("Highest Average = " + highestAverage);
         sc.close();
     }
 }

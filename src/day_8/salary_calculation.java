@@ -31,7 +31,7 @@ public class salary_calculation {
         double grossSalary = basic + hra + bonus;
         double tax = calculateTax(grossSalary);
         double netSalary = grossSalary - tax;
-        System.out.println("----- Salary Details -----");
+        System.out.println(" Salary Details is ");
         System.out.println("Employee Name: " + name);
         System.out.println("Basic Salary: " + basic);
         System.out.println("HRA: " + hra);

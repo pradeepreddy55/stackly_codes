@@ -30,6 +30,7 @@ public class matrixaddition {
                 sum[i][j] = a[i][j] + b[i][j];
             }
         }
+
         System.out.println("Addition of two matrices:");
         for(int i = 0; i < r; i++) {
             for(int j = 0; j < c; j++) {
